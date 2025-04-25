@@ -13,11 +13,13 @@ By regularly cleaning up these snapshots, you can reduce unnecessary storage cos
 
 ## 📁 Project Structure
 
-
+```bash
 .
 ├── handler.py          # Main Lambda function logic
 ├── requirements.txt    # Python dependencies
 └── serverless.yml      # (Optional) Serverless Framework config for deployment
+
+```
 
 
 
