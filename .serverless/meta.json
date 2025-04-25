@@ -1,0 +1,90 @@
+{
+  "/Users/saikumar/Desktop/AWS/aws-serverless-python-project/serverless.yml": {
+    "versionFramework": "4.14.1",
+    "servicePath": "/Users/saikumar/Desktop/AWS/aws-serverless-python-project/serverless.yml",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "org": "pasupuleti",
+      "service": "aws-serverless-python-project",
+      "provider": {
+        "name": "aws",
+        "runtime": "python3.12",
+        "stage": "dev",
+        "region": "us-east-1",
+        "versionFunctions": true,
+        "environment": {
+          "IS_LOCAL": "true"
+        }
+      },
+      "functions": {
+        "getEc2Instances": {
+          "handler": "handler.lambda_function",
+          "events": [],
+          "name": "aws-serverless-python-project-dev-getEc2Instances"
+        }
+      }
+    },
+    "provider": {
+      "name": "aws",
+      "runtime": "python3.12",
+      "stage": "dev",
+      "region": "us-east-1",
+      "versionFunctions": true,
+      "environment": {
+        "IS_LOCAL": "true"
+      }
+    },
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "serviceRawFile": "# \"org\" ensures this Service is used with the correct Serverless Framework Access Key.\norg: pasupuleti\n# \"service\" is the name of this project. This will also be added to your AWS resource names.\nservice: aws-serverless-python-project\n\nprovider:\n  name: aws\n  runtime: python3.12\n\nfunctions:\n  getEc2Instances:\n    handler: handler.lambda_function\n    \n",
+    "command": [
+      "invoke",
+      "local"
+    ],
+    "options": {
+      "function": "getEc2Instances"
+    },
+    "orgId": "acb8170d-daf9-4208-8cfa-654417084d18",
+    "orgName": "pasupuleti",
+    "userId": "Krg87KhYH1Trmg7tQ9",
+    "userName": "pasupuleti",
+    "serviceProviderAwsAccountId": "962170443327",
+    "serviceProviderAwsCfStackName": "aws-serverless-python-project-dev",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:962170443327:stack/aws-serverless-python-project-dev/89b5d1e0-2150-11f0-85b7-0affc335abeb",
+    "serviceProviderAwsCfStackCreated": "2025-04-24T21:10:24.139Z",
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
+    "serviceProviderAwsCfStackOutputs": [
+      {
+        "OutputKey": "HelloLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:us-east-1:962170443327:function:aws-serverless-python-project-dev-hello:1",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-aws-serverless-python-project-dev-HelloLambdaFunctionQualifiedArn"
+      },
+      {
+        "OutputKey": "HttpApiId",
+        "OutputValue": "fuxg01jay9",
+        "Description": "Id of the HTTP API",
+        "ExportName": "sls-aws-serverless-python-project-dev-HttpApiId"
+      },
+      {
+        "OutputKey": "ServerlessDeploymentBucketName",
+        "OutputValue": "serverless-framework-deployments-us-east-1-f2c75736-3395",
+        "ExportName": "sls-aws-serverless-python-project-dev-ServerlessDeploymentBucketName"
+      },
+      {
+        "OutputKey": "HttpApiUrl",
+        "OutputValue": "https://fuxg01jay9.execute-api.us-east-1.amazonaws.com",
+        "Description": "URL of the HTTP API",
+        "ExportName": "sls-aws-serverless-python-project-dev-HttpApiUrl"
+      }
+    ]
+  }
+}

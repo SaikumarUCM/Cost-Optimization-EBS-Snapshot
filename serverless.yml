@@ -1,0 +1,13 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: pasupuleti
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: aws-serverless-python-project
+
+provider:
+  name: aws
+  runtime: python3.12
+
+functions:
+  getEc2Instances:
+    handler: handler.lambda_function
+    
